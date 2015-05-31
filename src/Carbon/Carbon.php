@@ -936,26 +936,26 @@ class Carbon extends DateTime
         static::translator()->addResource('array', require __DIR__.'/Lang/'.$locale.'.php', $locale);
 
 
-        // Set start of week
-        $weekStartsAt = static::translator()->trans('week_starts_at');
+        // // Set start of week
+        // $weekStartsAt = static::translator()->trans('week_starts_at');
 
-        if ($weekStartsAt) {
-            static::setWeekStartsAt($weekStartsAt);
-        }
+        // if ($weekStartsAt) {
+        //     static::setWeekStartsAt($weekStartsAt);
+        // }
 
-        // Set end of week
-        $weekEndsAt = static::translator()->trans('week_ends_at');
+        // // Set end of week
+        // $weekEndsAt = static::translator()->trans('week_ends_at');
 
-        if ($weekEndsAt) {
-            static::setWeekEndsAt($weekEndsAt);
-        }
+        // if ($weekEndsAt) {
+        //     static::setWeekEndsAt($weekEndsAt);
+        // }
 
-        // Set weekend days
-        $weekendDays = static::translator()->trans('weekend_days');
+        // // Set weekend days
+        // $weekendDays = static::translator()->trans('weekend_days');
 
-        if ($weekendDays) {
-            static::setWeekendDays($weekendDays);
-        }
+        // if ($weekendDays) {
+        //     static::setWeekendDays($weekendDays);
+        // }
     }
 
     ///////////////////////////////////////////////////////////////////
