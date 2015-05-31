@@ -934,6 +934,28 @@ class Carbon extends DateTime
 
         // Ensure the locale has been loaded.
         static::translator()->addResource('array', require __DIR__.'/Lang/'.$locale.'.php', $locale);
+
+
+        // Set start of week
+        $weekStartsAt = static::translator()->trans('week_starts_at');
+
+        if ($weekStartsAt) {
+            static::setWeekStartsAt();
+        }
+
+        // Set end of week
+        $weekEndsAt = static::translator($weekStartsAt)->trans('week_ends_at');
+
+        if ($weekEndsAt) {
+            static::setWeekEndsAt($weekEndsAt);
+        }
+
+        // Set weekend days
+        $weekendDays = static::translator()->trans('weekend_days');
+
+        if ($weekendDays) {
+            static::setWeekendDays($weekendDays);
+        }
     }
 
     ///////////////////////////////////////////////////////////////////

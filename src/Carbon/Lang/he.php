@@ -29,5 +29,9 @@ return array(
     'from_now'  => 'בעוד :time',
     'after'     => ':time אחרי',
     'before'    => ':time לפני',
+
+    'week_starts_at' => 0,
+    'week_ends_at' => 6,
+    'weekend_days' => [5,6],
 );
 
