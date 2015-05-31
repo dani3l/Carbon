@@ -940,11 +940,11 @@ class Carbon extends DateTime
         $weekStartsAt = static::translator()->trans('week_starts_at');
 
         if ($weekStartsAt) {
-            static::setWeekStartsAt();
+            static::setWeekStartsAt($weekStartsAt);
         }
 
         // Set end of week
-        $weekEndsAt = static::translator($weekStartsAt)->trans('week_ends_at');
+        $weekEndsAt = static::translator()->trans('week_ends_at');
 
         if ($weekEndsAt) {
             static::setWeekEndsAt($weekEndsAt);
